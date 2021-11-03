@@ -6,6 +6,10 @@ class Human{
     unsigned health;
     std::string name;
 
+    void buy(){
+        std::cout<<this->getName()<<" has bought something\n";
+    }
+
     public:
 
     unsigned dmg=50;//adding const deletes copy constructor and copy assignment operator
@@ -58,13 +62,19 @@ class Weapon{
 
     public:
         Weapon(){
-            damage=theHuman().dmg;
+            damage=theHuman().dmg;//using the method it will never use an unitialized Human object
             std::cout<<"Weapon durability "<<damage<<"\n";
         }
 
     ~Weapon(){
         std::cout<<"Weapon destroyed\n";
     }
+
+    //~Weapon()=delete;
+    
+};
+
+class King : private Human {
     
 };
 
@@ -84,6 +94,10 @@ int main(){
     h3.printStats();
 
     Weapon w1;
+
+    King k1;
+
+    //k1.buy(); not accessible because of private inheritance
     
     return 0;
 
