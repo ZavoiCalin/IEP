@@ -73,7 +73,7 @@ class Weapon{
 int main(){
     Human h1(333, "Primul");
     Human h2;
-    Human h3(h1);
+    Human h3(h1);//copy constructor
 
     h2.printStats();
 
@@ -86,4 +86,6 @@ int main(){
     Weapon w1;
     
     return 0;
+
+    //deconstructors called multiple times
 }
