@@ -6,6 +6,9 @@ class Human{
     std::string name;
 
     public:
+
+    //Human()=delete; 
+
     Human() 
     : health(100), 
     name("Default")
@@ -13,18 +16,30 @@ class Human{
         std::cout<<"Default Human\n";
     }
 
-    //Human()=delete;
-
     Human(unsigned h, std::string n) 
     : health(h),
-    name(n)
-    {}
-
-     Human(unsigned h, std::string n) =delete;
+    name(n) //lista de initializare
+    {
+        std::cout<<"Human with "<<h<<" health and "<<n<<" name\n";
+    }
 
     ~Human(){
         std::cout<<"Human destroyed\n";
     }
+
+    //~Human()=delete;
+
+};
+
+
+     Human& theHuman(){
+        static Human human;
+        return human;
+    }
+
+class Weapon{
+    public:
+        
 };
 
 int main(){
