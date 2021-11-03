@@ -2,7 +2,7 @@
 
 class Human{
     private:
-    unsigned health=100;
+    unsigned health;
 
     public:
     Human(unsigned h) : health(h){
