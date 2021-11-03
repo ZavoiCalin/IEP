@@ -7,6 +7,8 @@ class Human{
 
     public:
 
+    unsigned const dmg=50;
+
     //Human()=delete; 
 
     Human() 
@@ -38,13 +40,27 @@ class Human{
     }
 
 class Weapon{
+    private:
+        unsigned damage;
+
     public:
-        
+        Weapon(){
+            damage=theHuman().dmg;
+            std::cout<<"Weapon durability "<<damage<<"\n";
+        }
+
+    ~Weapon(){
+        std::cout<<"Weapon destroyed\n";
+    }
+    
 };
+
+    
 
 int main(){
     Human h1(333, "Primul");
     Human h2;
+    Weapon w1;
     
     return 0;
 }
