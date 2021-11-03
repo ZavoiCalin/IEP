@@ -5,6 +5,7 @@ class Human{
     unsigned health;
 
     public:
+    Human() : health(100) {}
     Human(unsigned h) : health(h){
         
     }
