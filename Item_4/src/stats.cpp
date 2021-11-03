@@ -44,6 +44,7 @@ class Weapon{
 
 int main(){
     Human h1(333, "Primul");
+    Human h2;
     
     return 0;
 }
