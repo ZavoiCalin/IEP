@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/calin/Desktop/IEP/Game/src/human.hpp
+
+/home/calin/Desktop/IEP/Game/src/weapon.cpp
+iostream
+-
+human.hpp
+/home/calin/Desktop/IEP/Game/src/human.hpp
+weapon.hpp
+/home/calin/Desktop/IEP/Game/src/weapon.hpp
+
+/home/calin/Desktop/IEP/Game/src/weapon.hpp
+

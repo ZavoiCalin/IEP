@@ -1,0 +1,6 @@
+/home/calin/Desktop/IEP/Game/build/CMakeFiles/rebuild_cache.dir
+/home/calin/Desktop/IEP/Game/build/CMakeFiles/edit_cache.dir
+/home/calin/Desktop/IEP/Game/build/CMakeFiles/King.dir
+/home/calin/Desktop/IEP/Game/build/CMakeFiles/Weapon.dir
+/home/calin/Desktop/IEP/Game/build/CMakeFiles/game.dir
+/home/calin/Desktop/IEP/Game/build/CMakeFiles/Human.dir

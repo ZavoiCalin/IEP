@@ -1,0 +1,2 @@
+/usr/bin/ar qc libWeapon.a  CMakeFiles/Weapon.dir/weapon.cpp.o
+/usr/bin/ranlib libWeapon.a
