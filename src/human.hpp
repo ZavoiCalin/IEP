@@ -26,9 +26,13 @@ class Human{
 
     void printStats();
 
+    Human( const Human &refHuman);
+
+    Human& operator=( const Human& refHuman );
+
     ~Human();
 
-   
+    
 };
 
 

@@ -7,13 +7,19 @@
 
 class King : public Human {
     private:
-        Human *servant;
+        Human *servant=nullptr;
     public:
+        int power=1;
+
         Human getServant();
 
         King& operator=( const King& refKing );
 
-        King(Human s);
+        King(Human *s);
+
+        King( const King& refKing );
+
+        King();
 
 };
 

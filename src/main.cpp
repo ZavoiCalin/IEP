@@ -22,8 +22,20 @@ int main(){
 
   
   
+    Human s1(110, "Aux1"),s2(120, "Aux2"),s3(130, "Aux3");
+    King k1;
+    //std::cout<<k1.dmg<<"\n";
+    King k2;
 
-    Human aux1(110, "Aux1"), aux2(120, "Aux2"), aux3(130, "Aux3");
+    k1.dmg=800;
+    k2=k1;
+    std::cout<<k2.dmg<<"\n";
+    
+    /*Human *aux1, *aux2, *aux3;
+
+    aux1=&s1;
+    aux2=&s2;
+    aux3=&s3;
 
     King k1(aux1),k2(aux2),k3(aux3);
 
@@ -34,13 +46,19 @@ int main(){
     //k1=k2;
 
 
-    k1=k2=k3;
+    k1=k2;
 
-    aux1=k1.getServant();
+    //s1.printStats();
+    //s2.printStats();
+    //s3.printStats();
 
-    aux1.printStats();
-    aux2.printStats();
-    aux3.printStats();
+
+    King k4(k1), k5(k3);
+
+    k4.dmg=800;
+    k5=k4;
+
+    std::cout<<k5.dmg;*/
 
     return 0;
 
