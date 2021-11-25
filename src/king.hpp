@@ -6,7 +6,14 @@
 
 
 class King : public Human {
-    Human *servant;
+    private:
+        Human *servant;
+    public:
+        Human getServant(){
+            return *servant;
+        }
+
+        King& operator=( const King& refKing );
 };
 
 #endif

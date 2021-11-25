@@ -6,5 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/calin/Desktop/IEP/Game/src/human.hpp
+
 /home/calin/Desktop/IEP/Game/src/king.cpp
+iostream
+-
+king.hpp
+/home/calin/Desktop/IEP/Game/src/king.hpp
+
+/home/calin/Desktop/IEP/Game/src/king.hpp
+human.hpp
+/home/calin/Desktop/IEP/Game/src/human.hpp
 
