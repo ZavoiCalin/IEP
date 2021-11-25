@@ -25,12 +25,13 @@ int main(){
     Human s1(110, "Aux1"),s2(120, "Aux2"),s3(130, "Aux3");
     King k1;
     //std::cout<<k1.dmg<<"\n";
-    King k2;
+    King k2,k3;
 
     k1.dmg=800;
-    k2=k1;
+    k3=k2=k1;
     std::cout<<k2.dmg<<"\n";
-    
+    std::cout<<k3.dmg<<"\n";
+
     /*Human *aux1, *aux2, *aux3;
 
     aux1=&s1;
