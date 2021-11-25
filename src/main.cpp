@@ -19,10 +19,14 @@ int main(){
 
     Weapon w1;
 
-    King k1;
+    King k1,k2;
 
-    //k1.buy(); not accessible because of private inheritance
+    //k1.buy(); inaccessible because buy() method is private
     
+    //k1=k1; self assignment
+    k1=k2;
+    //k1=k2;
+
     return 0;
 
     //deconstructors called multiple times
