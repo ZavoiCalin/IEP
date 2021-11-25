@@ -19,13 +19,28 @@ int main(){
 
     Weapon w1;
 
-    King k1,k2;
+
+  
+  
+
+    Human aux1(110, "Aux1"), aux2(120, "Aux2"), aux3(130, "Aux3");
+
+    King k1(aux1),k2(aux2),k3(aux3);
 
     //k1.buy(); inaccessible because buy() method is private
     
-    //k1=k1; self assignment
-    k1=k2;
+    //k1=k1; self assignments
     //k1=k2;
+    //k1=k2;
+
+
+    k1=k2=k3;
+
+    aux1=k1.getServant();
+
+    aux1.printStats();
+    aux2.printStats();
+    aux3.printStats();
 
     return 0;
 

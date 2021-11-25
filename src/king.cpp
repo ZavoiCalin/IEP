@@ -11,3 +11,11 @@ King& King::operator=( const King& refKing ){
 
     return *this;
 }
+
+King::King(Human s){
+    servant=&s;   
+}
+
+Human King::getServant(){
+    return *servant;
+}

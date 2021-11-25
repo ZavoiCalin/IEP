@@ -9,11 +9,12 @@ class King : public Human {
     private:
         Human *servant;
     public:
-        Human getServant(){
-            return *servant;
-        }
+        Human getServant();
 
         King& operator=( const King& refKing );
+
+        King(Human s);
+
 };
 
 #endif
