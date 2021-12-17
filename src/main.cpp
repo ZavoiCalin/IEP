@@ -64,14 +64,20 @@ int main(){
 
     std::string l1="Shared land";
 
-    King kcl1("c1", l1);
+    std::shared_ptr <std::string> pl1(&l1);
+    std::shared_ptr <std::string> pl2=pl1;
 
+
+    King kcl1("c1", l1);
     King kcl2("c2", l1);
 
     //kcl1.castle=kcl2.castle; //can not assign unique pointers
 
-    std::cout<<&kcl1.land<<"\n";
-    std::cout<<&kcl2.land<<"\n";
+    std::cout<<pl1.get()<<"\n";
+    std::cout<<pl2.get()<<"\n";
+
+    std::cout<<kcl1.land.get()<<"\n";
+    std::cout<<kcl2.land.get()<<"\n";
 
     return 0;
 
