@@ -61,6 +61,7 @@ int main(){
 
     std::cout<<k5.dmg;*/
 
+
     std::string l1="Shared land";
 
     King kcl1("c1", l1);
