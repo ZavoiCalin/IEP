@@ -61,6 +61,17 @@ int main(){
 
     std::cout<<k5.dmg;*/
 
+    std::string l1="Shared land";
+
+    King kcl1("c1", l1);
+
+    King kcl2("c2", l1);
+
+    //kcl1.castle=kcl2.castle; //can not assign unique pointers
+
+    std::cout<<&kcl1.land<<"\n";
+    std::cout<<&kcl2.land<<"\n";
+
     return 0;
 
     //deconstructors called multiple times

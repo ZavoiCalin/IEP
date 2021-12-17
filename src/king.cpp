@@ -29,3 +29,8 @@ King::King( const King& refKing ): Human(refKing){
 King::King(): Human(){
     std::cout<<"Default King\n";
 }
+
+King::King(std::string c, std::string l): castle(std::make_unique<std::string>(c)), land(std::make_shared<std::string>(l))
+{
+    
+}
