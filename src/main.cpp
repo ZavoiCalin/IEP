@@ -2,7 +2,30 @@
 #include "human.hpp"
 #include "weapon.hpp"
 #include "king.hpp"
+#include <memory>
+#include <mutex>
+#include <thread>
 
+
+std::mutex m;
+
+void mutexPrintStats(Human h){
+    m.lock();
+    std::cout<<"Mutex locked for printing stats\n";
+    h.printStats();
+    m.unlock();
+    std::cout<<"Mutex unlocked\n";
+}
+
+void mutexPrintKingName(King k){
+    m.lock();
+    std::cout<<"Mutex locked for printing king name\n";
+    std::cout<<k.getName()<<"\n";
+    m.unlock();
+    std::cout<<"Mutex unlocked\n";
+}
+
+void nimic(){}
 
 int main(){
     Human h1(333, "Primul");
@@ -78,6 +101,14 @@ int main(){
 
     std::cout<<kcl1.land.get()<<"\n";
     std::cout<<kcl2.land.get()<<"\n";
+
+    //std::thread t_human(mutexPrintStats);
+    //std::thread t_king(mutexPrintKingName);
+
+    //t_human.join();
+    //t_king.join();
+
+    std::cout<<"Ambele thread-uri au terminat excutia\n";
 
     return 0;
 

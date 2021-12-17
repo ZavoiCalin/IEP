@@ -31,6 +31,7 @@
     }
 
     void Human::printStats(){
+        
         std::cout<<this->getHealth()<<" "<<this->getName()<<"\n";
     }
 
